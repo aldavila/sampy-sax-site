@@ -26,7 +26,7 @@ export default function Contact() {
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-3 text-white/60">
                 <svg
-                  className="w-5 h-5 text-gold/60"
+                  className="w-6 h-6 text-gold shrink-0"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"

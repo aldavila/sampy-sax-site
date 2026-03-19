@@ -70,7 +70,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-20 bg-bg-secondary relative overflow-hidden">
+    <section className="py-20 bg-bg-primary relative overflow-hidden">
       {/* Background accent */}
       <div className="absolute inset-0 bg-gradient-to-r from-gold/5 via-transparent to-gold/5" />
 

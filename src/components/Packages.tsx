@@ -13,9 +13,16 @@ const packages = [
         fill="none"
         stroke="currentColor"
         strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       >
-        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-        <circle cx="12" cy="7" r="4" />
+        {/* Two champagne glasses clinking */}
+        <path d="M8 22l4-10L8 2" />
+        <path d="M16 22l-4-10L16 2" />
+        <path d="M5.5 8h5" />
+        <path d="M13.5 8h5" />
+        <circle cx="12" cy="12" r="1" fill="currentColor" />
+        <path d="M9.5 19h5" />
       </svg>
     ),
     features: [
@@ -95,8 +102,8 @@ export default function Packages() {
               key={pkg.title}
               className={`group relative rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 overflow-hidden ${
                 i === 1
-                  ? "border border-gold/20"
-                  : "border border-white/5 hover:border-gold/20"
+                  ? "border border-soft-brass/30"
+                  : "border border-white/5 hover:border-soft-brass/30"
               }`}
             >
               {/* Background image */}
@@ -152,7 +159,7 @@ export default function Packages() {
                   className={`block text-center py-3 rounded-full text-sm font-semibold transition-all duration-200 ${
                     i === 1
                       ? "bg-gold text-black hover:bg-gold-light"
-                      : "border border-gold/30 text-gold hover:bg-gold/10"
+                      : "border border-soft-brass/30 text-gold hover:bg-gold/10"
                   }`}
                 >
                   Inquire Now

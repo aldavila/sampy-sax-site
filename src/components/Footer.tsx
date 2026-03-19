@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const socials = [
   {
     name: "TikTok",
@@ -48,19 +50,22 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-bg-secondary border-t border-white/5">
+    <footer className="bg-bg-secondary border-t border-soft-brass/10">
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo */}
-          <div className="text-center md:text-left">
-            <a
-              href="#home"
-              className="text-xl font-bold tracking-wider text-gradient-gold"
-            >
-              SAMPY SAX
+          <div className="text-center md:text-left flex flex-col items-center md:items-start">
+            <a href="#home">
+              <Image
+                src="/images/isotipo.png"
+                alt="Sampy Sax"
+                width={48}
+                height={48}
+                className="w-12 h-12"
+              />
             </a>
-            <p className="text-sm text-white/30 mt-2">
-              Sax House Music — Miami & Medell&iacute;n
+            <p className="text-xs tracking-[0.25em] uppercase text-soft-brass/60 mt-3 font-light">
+              Words Fails, Music Speaks
             </p>
           </div>
 
@@ -73,7 +78,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.name}
-                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/40 hover:text-gold hover:border-gold/30 transition-all duration-200"
+                className="w-10 h-10 rounded-full border border-soft-brass/15 flex items-center justify-center text-white/40 hover:text-gold hover:border-gold/30 transition-all duration-200"
               >
                 {social.icon}
               </a>

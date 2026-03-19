@@ -8,13 +8,13 @@ export default function About() {
           {/* Photo */}
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
             <Image
-              src="/images/calante-1.jpg"
-              alt="Sampy Sax performing in an intimate bar setting"
+              src="/images/new-photo.png"
+              alt="Daniel Samper portrait"
               fill
               className="object-cover"
             />
             {/* Gold border accent */}
-            <div className="absolute inset-0 rounded-2xl border border-gold/10" />
+            <div className="absolute inset-0 rounded-2xl border border-soft-brass/20" />
           </div>
 
           {/* Text content */}
@@ -62,7 +62,7 @@ export default function About() {
               ].map((genre) => (
                 <span
                   key={genre}
-                  className="px-4 py-1.5 text-xs tracking-wider uppercase border border-gold/20 text-gold/70 rounded-full"
+                  className="px-4 py-1.5 text-xs tracking-wider uppercase border border-soft-brass/30 text-gold/70 rounded-full"
                 >
                   {genre}
                 </span>

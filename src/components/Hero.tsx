@@ -16,34 +16,30 @@ export default function Hero() {
       />
 
       {/* Dark gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#19142A]/70 via-[#19142A]/40 to-[#19142A]/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#19142A]/30 via-transparent to-[#19142A]/30" />
+
+      {/* Isotipo watermark */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <Image
+          src="/images/isotipo.png"
+          alt=""
+          width={500}
+          height={500}
+          className="opacity-[0.04] w-[500px] h-auto"
+        />
+      </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        {/* Sax icon */}
-        <div className="mb-8 text-gold text-6xl">
-          <svg
-            className="w-16 h-16 mx-auto mb-4 text-gold"
-            viewBox="0 0 64 64"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M32 4C32 4 28 8 28 14C28 20 32 22 32 28C32 34 28 38 28 44C28 50 32 56 32 60"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-            />
-            <circle cx="32" cy="14" r="3" fill="currentColor" opacity="0.6" />
-            <circle cx="32" cy="28" r="3" fill="currentColor" opacity="0.6" />
-            <circle cx="32" cy="42" r="3" fill="currentColor" opacity="0.6" />
-            <path
-              d="M28 56C28 56 24 58 20 58C16 58 14 56 14 52C14 48 18 46 22 46"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-            />
-          </svg>
+        {/* Isotipo icon */}
+        <div className="mb-8">
+          <Image
+            src="/images/isotipo.png"
+            alt="Sampy Sax isotipo"
+            width={56}
+            height={56}
+            className="mx-auto mb-4 w-14 h-14 opacity-80"
+          />
         </div>
 
         <p className="text-gold/80 text-sm tracking-[0.3em] uppercase mb-4 font-medium">
