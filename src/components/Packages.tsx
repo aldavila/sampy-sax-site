@@ -7,30 +7,14 @@ const packages = [
       "Weddings, birthdays & corporate celebrations. Elegant saxophone performances tailored to your special occasion.",
     image: "/images/dj-1.jpeg",
     icon: (
-      <svg
+      <Image
+        src="/images/champagne-icon.png"
+        alt="Champagne glasses"
+        width={40}
+        height={40}
         className="w-10 h-10"
-        viewBox="0 0 64 64"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        {/* Left champagne glass */}
-        <path d="M18 58l6-24" />
-        <path d="M24 34c-6-2-10-8-10-16h20c0 8-4 14-10 16z" />
-        <line x1="14" y1="18" x2="34" y2="18" />
-        <line x1="14" y1="58" x2="22" y2="58" />
-        {/* Right champagne glass */}
-        <path d="M46 58l-6-24" />
-        <path d="M40 34c6-2 10-8 10-16H30c0 8 4 14 10 16z" />
-        <line x1="30" y1="18" x2="50" y2="18" />
-        <line x1="42" y1="58" x2="50" y2="58" />
-        {/* Clink sparkle */}
-        <line x1="30" y1="10" x2="34" y2="12" />
-        <line x1="32" y1="6" x2="32" y2="10" />
-        <line x1="34" y1="10" x2="30" y2="12" />
-      </svg>
+        style={{ filter: "brightness(0) saturate(100%) invert(63%) sepia(89%) saturate(1000%) hue-rotate(360deg) brightness(102%) contrast(101%)" }}
+      />
     ),
     features: [
       "Customized setlist",
