@@ -10,7 +10,7 @@ export default function Music() {
             The <span className="text-gradient-gold">Music</span>
           </h2>
           <p className="mt-4 text-white/50 max-w-xl mx-auto">
-            From the SNAX EP to live performances — hear the sound that&apos;s
+            From the SNAX EP to live performances, hear the sound that&apos;s
             traveled 56+ countries.
           </p>
         </div>

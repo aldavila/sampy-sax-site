@@ -19,7 +19,7 @@ export default function Contact() {
             </h2>
             <p className="text-white/60 leading-relaxed mb-8">
               Ready to make your event unforgettable? Whether it&apos;s a
-              wedding, corporate event, festival, or private party — let&apos;s
+              wedding, corporate event, festival, or private party, let&apos;s
               create something special together.
             </p>
 

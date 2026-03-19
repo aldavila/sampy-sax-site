@@ -26,7 +26,7 @@ export default function Gallery() {
             <span className="text-gradient-gold">Gallery</span>
           </h2>
           <p className="mt-4 text-white/50 max-w-xl mx-auto">
-            From intimate venues to massive festivals — glimpses of the energy
+            From intimate venues to massive festivals, glimpses of the energy
             Sampy brings to every stage.
           </p>
         </div>
