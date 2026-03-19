@@ -9,20 +9,27 @@ const packages = [
     icon: (
       <svg
         className="w-10 h-10"
-        viewBox="0 0 24 24"
+        viewBox="0 0 64 64"
         fill="none"
         stroke="currentColor"
-        strokeWidth="1.5"
+        strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       >
-        {/* Two champagne glasses clinking */}
-        <path d="M8 22l4-10L8 2" />
-        <path d="M16 22l-4-10L16 2" />
-        <path d="M5.5 8h5" />
-        <path d="M13.5 8h5" />
-        <circle cx="12" cy="12" r="1" fill="currentColor" />
-        <path d="M9.5 19h5" />
+        {/* Left champagne glass */}
+        <path d="M18 58l6-24" />
+        <path d="M24 34c-6-2-10-8-10-16h20c0 8-4 14-10 16z" />
+        <line x1="14" y1="18" x2="34" y2="18" />
+        <line x1="14" y1="58" x2="22" y2="58" />
+        {/* Right champagne glass */}
+        <path d="M46 58l-6-24" />
+        <path d="M40 34c6-2 10-8 10-16H30c0 8 4 14 10 16z" />
+        <line x1="30" y1="18" x2="50" y2="18" />
+        <line x1="42" y1="58" x2="50" y2="58" />
+        {/* Clink sparkle */}
+        <line x1="30" y1="10" x2="34" y2="12" />
+        <line x1="32" y1="6" x2="32" y2="10" />
+        <line x1="34" y1="10" x2="30" y2="12" />
       </svg>
     ),
     features: [
