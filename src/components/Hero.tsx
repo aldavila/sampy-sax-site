@@ -1,25 +1,23 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0a] via-[#1a1206] to-[#0a0a0a]" />
-
-      {/* Decorative circles */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gold/3 rounded-full blur-3xl" />
-
-      {/* Subtle pattern overlay */}
-      <div
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 1px 1px, rgba(212,168,83,0.3) 1px, transparent 0)",
-          backgroundSize: "40px 40px",
-        }}
+      {/* Background photo */}
+      <Image
+        src="/images/egypt.jpg"
+        alt="Sampy Sax performing in front of the Pyramids of Giza"
+        fill
+        className="object-cover"
+        priority
       />
+
+      {/* Dark gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Sax icon */}

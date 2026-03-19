@@ -1,27 +1,18 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about" className="py-24 md:py-32 bg-bg-primary">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Image placeholder */}
+          {/* Photo */}
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#1a1206] via-bg-card to-[#1a1206]" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <svg
-                  className="w-24 h-24 text-gold/30 mx-auto mb-4"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <path d="M21 15l-5-5L5 21" />
-                </svg>
-                <p className="text-white/20 text-sm">Photo coming soon</p>
-              </div>
-            </div>
+            <Image
+              src="/images/calante-1.jpg"
+              alt="Sampy Sax performing in an intimate bar setting"
+              fill
+              className="object-cover"
+            />
             {/* Gold border accent */}
             <div className="absolute inset-0 rounded-2xl border border-gold/10" />
           </div>

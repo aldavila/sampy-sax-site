@@ -1,8 +1,11 @@
+import Image from "next/image";
+
 const packages = [
   {
     title: "Private Events",
     description:
       "Weddings, birthdays & corporate celebrations. Elegant saxophone performances tailored to your special occasion.",
+    image: "/images/dj-1.jpeg",
     icon: (
       <svg
         className="w-10 h-10"
@@ -25,6 +28,7 @@ const packages = [
     title: "DJ Set + Sax",
     description:
       "Saxophone meets DJ set for unforgettable vibes. The perfect combination of live instrumentation and electronic beats.",
+    image: "/images/event-1.jpeg",
     icon: (
       <svg
         className="w-10 h-10"
@@ -48,6 +52,7 @@ const packages = [
     title: "Live Shows",
     description:
       "Energetic performances on any stage. From intimate venues to large festivals, bringing the crowd to their feet.",
+    image: "/images/stage-1.jpeg",
     icon: (
       <svg
         className="w-10 h-10"
@@ -88,55 +93,71 @@ export default function Packages() {
           {packages.map((pkg, i) => (
             <div
               key={pkg.title}
-              className={`group relative rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 ${
+              className={`group relative rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 overflow-hidden ${
                 i === 1
-                  ? "bg-gradient-to-b from-gold/10 to-bg-card border border-gold/20"
-                  : "bg-bg-card border border-white/5 hover:border-gold/20"
+                  ? "border border-gold/20"
+                  : "border border-white/5 hover:border-gold/20"
               }`}
             >
-              {i === 1 && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gold text-black text-xs font-bold rounded-full uppercase tracking-wider">
-                  Popular
-                </div>
-              )}
+              {/* Background image */}
+              <Image
+                src={pkg.image}
+                alt={pkg.title}
+                fill
+                className="object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-300"
+              />
+              {/* Dark overlay */}
+              <div className={`absolute inset-0 ${
+                i === 1
+                  ? "bg-gradient-to-b from-gold/10 to-bg-card/95"
+                  : "bg-bg-card/90"
+              }`} />
 
-              <div className="text-gold mb-6">{pkg.icon}</div>
+              <div className="relative z-10">
+                {i === 1 && (
+                  <div className="absolute -top-5 left-1/2 -translate-x-1/2 px-4 py-1 bg-gold text-black text-xs font-bold rounded-full uppercase tracking-wider">
+                    Popular
+                  </div>
+                )}
 
-              <h3 className="text-xl font-bold mb-3">{pkg.title}</h3>
-              <p className="text-white/50 text-sm leading-relaxed mb-6">
-                {pkg.description}
-              </p>
+                <div className="text-gold mb-6">{pkg.icon}</div>
 
-              <ul className="space-y-2 mb-8">
-                {pkg.features.map((feature) => (
-                  <li
-                    key={feature}
-                    className="flex items-center gap-2 text-sm text-white/60"
-                  >
-                    <svg
-                      className="w-4 h-4 text-gold/60 shrink-0"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
+                <h3 className="text-xl font-bold mb-3">{pkg.title}</h3>
+                <p className="text-white/50 text-sm leading-relaxed mb-6">
+                  {pkg.description}
+                </p>
+
+                <ul className="space-y-2 mb-8">
+                  {pkg.features.map((feature) => (
+                    <li
+                      key={feature}
+                      className="flex items-center gap-2 text-sm text-white/60"
                     >
-                      <polyline points="20 6 9 17 4 12" />
-                    </svg>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
+                      <svg
+                        className="w-4 h-4 text-gold/60 shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
 
-              <a
-                href="#contact"
-                className={`block text-center py-3 rounded-full text-sm font-semibold transition-all duration-200 ${
-                  i === 1
-                    ? "bg-gold text-black hover:bg-gold-light"
-                    : "border border-gold/30 text-gold hover:bg-gold/10"
-                }`}
-              >
-                Inquire Now
-              </a>
+                <a
+                  href="#contact"
+                  className={`block text-center py-3 rounded-full text-sm font-semibold transition-all duration-200 ${
+                    i === 1
+                      ? "bg-gold text-black hover:bg-gold-light"
+                      : "border border-gold/30 text-gold hover:bg-gold/10"
+                  }`}
+                >
+                  Inquire Now
+                </a>
+              </div>
             </div>
           ))}
         </div>

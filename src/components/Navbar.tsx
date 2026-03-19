@@ -1,12 +1,14 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#packages", label: "Packages" },
   { href: "#music", label: "Music" },
+  { href: "#gallery", label: "Gallery" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -29,11 +31,15 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a
-          href="#home"
-          className="text-xl font-bold tracking-wider text-gradient-gold"
-        >
-          SAMPY SAX
+        <a href="#home">
+          <Image
+            src="/images/logo-white.png"
+            alt="Sampy Sax"
+            width={160}
+            height={40}
+            style={{ height: "40px", width: "auto" }}
+            priority
+          />
         </a>
 
         {/* Desktop nav */}
