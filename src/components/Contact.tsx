@@ -113,7 +113,7 @@ export default function Contact() {
                 <input
                   type="hidden"
                   name="subject"
-                  value="New Booking Inquiry — Sampy Sax Website"
+                  value="New Booking Inquiry | Sampy Sax Website"
                 />
 
                 <div className="space-y-5">
