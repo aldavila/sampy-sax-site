@@ -37,8 +37,7 @@ export default function Navbar() {
             alt="Sampy Sax Icon"
             width={36}
             height={36}
-            style={{ height: "36px", width: "auto" }}
-            className="invert"
+            style={{ height: "36px", width: "auto", filter: "brightness(0) saturate(100%) invert(62%) sepia(85%) saturate(1500%) hue-rotate(6deg) brightness(104%) contrast(104%)" }}
             priority
           />
           <Image
