@@ -31,15 +31,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-2">
-          <Image
-            src="/images/isotipo.png"
-            alt="Sampy Sax Icon"
-            width={36}
-            height={36}
-            style={{ height: "36px", width: "auto", filter: "brightness(0) saturate(100%) invert(62%) sepia(85%) saturate(1500%) hue-rotate(6deg) brightness(104%) contrast(104%)" }}
-            priority
-          />
+        <a href="#home">
           <Image
             src="/images/logo-new.png"
             alt="Sampy Sax"

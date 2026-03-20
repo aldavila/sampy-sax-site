@@ -14,6 +14,10 @@ export const metadata: Metadata = {
     "Sampy Sax",
     "Daniel Samper",
   ],
+  icons: {
+    icon: "/images/isotipo.png",
+    apple: "/images/isotipo.png",
+  },
   openGraph: {
     title: "Sampy Sax | Sax House Music",
     description:
