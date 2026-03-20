@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     description:
       "Colombian-American saxophonist blending saxophone with Afro & Deep House rhythms.",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Sampy Sax",
+      },
+    ],
   },
 };
 
