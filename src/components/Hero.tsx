@@ -16,39 +16,25 @@ export default function Hero() {
       />
 
       {/* Dark gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#19142A]/70 via-[#19142A]/40 to-[#19142A]/80" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#19142A]/30 via-transparent to-[#19142A]/30" />
-
-      {/* Isotipo watermark */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <Image
-          src="/images/isotipo.png"
-          alt=""
-          width={500}
-          height={500}
-          className="opacity-[0.04] w-[500px] h-auto"
-        />
-      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        {/* Isotipo icon */}
-        <div className="mb-8">
-          <Image
-            src="/images/isotipo.png"
-            alt="Sampy Sax isotipo"
-            width={56}
-            height={56}
-            className="mx-auto mb-4 w-14 h-14 opacity-80"
-          />
-        </div>
-
         <p className="text-gold/80 text-sm tracking-[0.3em] uppercase mb-4 font-medium">
           Sax House Music
         </p>
 
-        <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-6">
-          <span className="text-gradient-gold">SAMPY SAX</span>
-        </h1>
+        {/* Logo image replacing SAMPY SAX text */}
+        <div className="mb-6">
+          <Image
+            src="/images/logo-new.png"
+            alt="Sampy Sax"
+            width={500}
+            height={120}
+            className="mx-auto w-auto max-w-[400px] md:max-w-[500px] h-auto"
+            priority
+          />
+        </div>
 
         <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
           Unforgettable Performances for Unforgettable Events

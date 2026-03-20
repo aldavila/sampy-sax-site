@@ -32,9 +32,9 @@
   --color-pulse-red: #E83902;
   --color-ivory: #F9F8F4;
   --color-concrete: #CCCCCC;
-  --color-bg-primary: #19142A;
-  --color-bg-secondary: #230102;
-  --color-bg-card: #211C33;
+  --color-bg-primary: #000000;
+  --color-bg-secondary: #0a0a0a;
+  --color-bg-card: #111111;
   --font-sans: "Kamerik 105", ui-sans-serif, system-ui, sans-serif;
 }
 
